@@ -7,7 +7,7 @@ I've grown extremely frustrated, trying to follow the [Documentations & Tutorial
 
 I've only started exploring blockchain and ethereum development, so I'm still a beginner. From a noob's perspective, learning ethereum dev really sucks. This is mainly due to the lack of **good** resources out there. I get it, its still early stage, blockchain as a technology itself is not mainstream yet, but I expect some level of consistency in its docs from a platform trying to disrupt multiple Billion $ industries.
 
-Ethereum's documentation and tutorials are exactly like its database - DISTRIBUTED! There is just too much chaos and things are not organized at 1 place, from where I could possible access all knowledge about ethereum development. To top it all, even the documentation has a lot of **functions that no longer seem to work in the way they are shown to**.
+Ethereum's documentation and tutorials are exactly like its database - DISTRIBUTED! There is just too much chaos and things are not organized at 1 place, from where I could possibly access all knowledge about ethereum development. To top it all, even the documentation has a lot of **functions that no longer seem to work in the way they are shown to**.
 
 Take page 13 of the solidity & web3 doc (link provided above) for eg-:
 
@@ -25,7 +25,7 @@ MyCoinContract.Sent().watch(function(error, result) {
   //definition
 }
 ```
-However, as of this writing, you cannot apply watch () on an event using the Contract Name itself. You have to create a contract object and handle the event using that. Furthermore, the 1st argument for watch () must be the handler function.
+As of this writing, you cannot apply watch () on an event using the Contract Name itself. You have to **create a contract object and handle the event using that object**. Furthermore, the 1st argument for watch () must be the handler function.
 So, the full snippet looks something like:
 
 ```javascript
@@ -51,5 +51,6 @@ Solidity and Web3 Code snippets & Tutorials for Noobs
 2. To point out flaws in the code snippets in Solidity & web3 docs (because these docs don't seem to be up-to-date) and provide the actual syntax & mechanics.
 
 Hopefully, this will help someone
+
 ps- contributions, suggestions and swearing are all welcome =)
 
