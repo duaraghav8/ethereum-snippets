@@ -1,11 +1,11 @@
 ##Watching Events using the web3 API
 
 Events help clients keep track of a particular occurance - the closing of an Auction, for example.
-So let's explore how create events, emit them and establish a mechanism that notifies us upon firing of the particular event
+So let's explore how to create events, emit them and establish a mechanism that notifies us upon firing of the particular event
 
-We'll start with a very basic ```Auction``` Contract. The end result will load an HTML document which notifies that the call to close the auction will be made after 3 seconds. When the auction is closed, an event is triggered, notifying web3 of the closing, which in turn changes the text to "Auction closed".
+We'll start with a very basic ```Auction``` Contract. The end result will load an HTML document which notifies that the call to close the auction will be made after 3 seconds. When the auction is closed, an event is triggered, notifying web3 of the closing, which in turn notifies our listener, whose code changes the text to "Auction closed".
 
-Below are the 3 truffle files (the entire truffle project is available under the "project" directory):
+Below are the 3 truffle files (the entire truffle project will soon be available under the "project" directory):
 
 **index.html**
 ```html
